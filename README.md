@@ -15,7 +15,7 @@ Build the best conditional flow matching model for particle physics jet generati
 
 ### 1. Download the data
 
-The data files are hosted on Google Drive (~460 MB total). Download them into `code/data/`:
+The data files (~460 MB total) are hosted as a GitHub Release. Download them into `code/data/`:
 
 ```bash
 cd code
