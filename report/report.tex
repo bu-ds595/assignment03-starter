@@ -1,0 +1,81 @@
+\documentclass{article}
+
+\usepackage[preprint]{neurips_2025}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{hyperref}
+\usepackage{url}
+\usepackage{booktabs}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{nicefrac}
+\usepackage{microtype}
+\usepackage{xcolor}
+\usepackage{graphicx}
+
+\title{Assignment 3: [Your Title]}
+
+\author{%
+  Your Name \\
+  Boston University \\
+  \texttt{your-email@bu.edu}
+}
+
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+One-paragraph summary: your best approach, key results (W1 score), and main takeaway.
+\end{abstract}
+
+\section{Approach}
+
+What did you try and why? Describe your architecture, training tricks, and conditioning strategy. Be specific about what you changed from the baseline.
+
+% Your content here
+
+\section{Results and Analysis}
+
+Your W1 score breakdown by jet type and observable (as a table). Include observable distribution plots or $\eta$-$\phi$ visualizations comparing your best model to real data. What worked best? Where does your model still struggle? Which jet types or observables are hardest, and why?
+
+% Example table — fill in your actual numbers. Bold your best model's row.
+\begin{table}[h]
+\centering
+\caption{W1 scores ($\times 10^{-3}$, $\downarrow$) per jet type and observable. Best model in \textbf{bold}.}
+\begin{tabular}{@{} l ccccc c @{}}
+\toprule
+& Gluon & Quark & Top & $W$ & $Z$ & Total \\
+\midrule
+\multicolumn{7}{l}{\textit{Mass}} \\
+\quad Baseline MLP & XX & XX & XX & XX & XX & XX \\
+\quad + [your improvement 1] & XX & XX & XX & XX & XX & XX \\
+\quad \textbf{+ [your best model]} & \textbf{XX} & \textbf{XX} & \textbf{XX} & \textbf{XX} & \textbf{XX} & \textbf{XX} \\
+\midrule
+\multicolumn{7}{l}{\textit{Particle $p_T^{\mathrm{rel}}$}} \\
+\quad Baseline MLP & XX & XX & XX & XX & XX & XX \\
+\quad \textbf{+ [your best model]} & \textbf{XX} & \textbf{XX} & \textbf{XX} & \textbf{XX} & \textbf{XX} & \textbf{XX} \\
+\midrule
+\multicolumn{7}{l}{\textit{Particle $\eta_{\mathrm{rel}}$}} \\
+\quad Baseline MLP & XX & XX & XX & XX & XX & XX \\
+\quad \textbf{+ [your best model]} & \textbf{XX} & \textbf{XX} & \textbf{XX} & \textbf{XX} & \textbf{XX} & \textbf{XX} \\
+\midrule
+\multicolumn{7}{l}{\textit{Particle $\phi_{\mathrm{rel}}$}} \\
+\quad Baseline MLP & XX & XX & XX & XX & XX & XX \\
+\quad \textbf{+ [your best model]} & \textbf{XX} & \textbf{XX} & \textbf{XX} & \textbf{XX} & \textbf{XX} & \textbf{XX} \\
+\midrule
+\textbf{Total} & XX & XX & XX & XX & XX & XX \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+% Tip: Use \includegraphics to add figures exported from your notebook
+
+\section{AI Collaboration}
+
+Reflect on your use of AI assistants.
+
+% Your content here
+
+\end{document}
