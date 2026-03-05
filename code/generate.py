@@ -37,10 +37,10 @@ def sinusoidal_embedding(t, dim=128):
 
 
 class SimpleMLPVelocity(nn.Module):
-    hidden_dim: int = 256
-    n_layers: int = 3
+    hidden_dim: int = 128
+    n_layers: int = 2
     n_types: int = N_TYPES
-    time_dim: int = 64
+    time_dim: int = 32
 
     @nn.compact
     def __call__(self, x_t, t, y, mask):
