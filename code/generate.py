@@ -19,7 +19,7 @@ import jax
 import jax.numpy as jnp
 import jax.random as jr
 import numpy as np
-from utils import JET_TYPES, N_FEATURES, N_PARTICLES, N_TYPES, load_model
+from utils import JET_TYPES, N_FEATURES, N_PARTICLES, N_TYPES, load_model, sinusoidal_embedding
 
 N_SAMPLES = 2000  # per jet type
 
@@ -27,13 +27,6 @@ N_SAMPLES = 2000  # per jet type
 # ── Model definition ──────────────────────────────────────────
 # TODO: Replace this with your actual model architecture.
 # It must match the architecture used to train model_params.pkl.
-
-
-def sinusoidal_embedding(t, dim=128):
-    half = dim // 2
-    freqs = jnp.exp(-jnp.log(10000.0) * jnp.arange(half) / half)
-    args = t[:, None] * freqs[None, :]
-    return jnp.concatenate([jnp.sin(args), jnp.cos(args)], axis=-1)
 
 
 class SimpleMLPVelocity(nn.Module):

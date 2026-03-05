@@ -13,6 +13,14 @@ N_FEATURES = 3
 N_TYPES = len(JET_TYPES)
 
 
+def sinusoidal_embedding(t, dim=128):
+    """Map scalar t in [0,1] to a vector of sines and cosines."""
+    half = dim // 2
+    freqs = jnp.exp(-jnp.log(10000.0) * jnp.arange(half) / half)
+    args = t[:, None] * freqs[None, :]
+    return jnp.concatenate([jnp.sin(args), jnp.cos(args)], axis=-1)
+
+
 def save_submission(gen_jets_dict, gen_masks_dict, path="submission.npz"):
     """Save generated jets for evaluation.
 
