@@ -1,6 +1,6 @@
 # Assignment 3: Jet Generation Challenge
 
-Build the best conditional flow matching model for particle physics jet generation. Top 2 on the leaderboard win 2 months of Claude Max.
+Build the best conditional flow matching model for particle physics jet generation.
 
 ## Structure
 
