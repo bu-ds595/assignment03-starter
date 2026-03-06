@@ -2,7 +2,7 @@
 
 **⏰ Due: Wednesday, March 25** | 15% of final grade
 
-Build the best conditional flow matching model for particle physics jet generation. Top 2 on the leaderboard win 2 months of Claude Max.
+Build the best conditional flow matching model for particle physics jet generation.
 
 📄 **[Assignment description (PDF)](assignment-03.pdf)**
 
