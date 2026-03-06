@@ -1,14 +1,16 @@
 # Assignment 3: Jet Generation Challenge
 
-Build the best conditional flow matching model for particle physics jet generation.
+**⏰ Due: Wednesday, March 25** | 15% of final grade
+
+Build the best conditional flow matching model for particle physics jet generation. Top 2 on the leaderboard win 2 months of Claude Max.
+
+📄 **[Assignment description (PDF)](assignment-03.pdf)**
 
 ## Structure
 
 - **Assignment description**: `assignment-03.pdf`
 - **Starter code**: `code/assignment-03-starter.ipynb`
-- **Shared utilities**: `code/utils.py`
 - **Generation template**: `code/generate.py`
-- **Evaluation script**: `code/evaluate.py`
 - **Your report**: `report/report.tex`
 
 ## Getting Started
